@@ -1,0 +1,20 @@
+<!-- flag_usa.html -->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle='red';
+    pincel.fillRect(0, 0, 600, 400);
+
+
+     for(var y = 50; y <= 350; y + 100){
+        pincel.fillStyle='white';
+        console.log(pincel.fillRect(0, y, 600, 50));
+        
+    }
+
+</script>
